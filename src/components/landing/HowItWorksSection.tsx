@@ -1,0 +1,86 @@
+import { motion } from "framer-motion";
+import { MousePointerClick, Trophy, TrendingUp } from "lucide-react";
+
+const steps = [
+  {
+    icon: MousePointerClick,
+    title: "Повышайте свой уровень",
+    description: "Каждое действие — шаг вверх. Он стоит денег, как и любое движение в жизни.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Закрепляйте позицию",
+    description: "Ваш статус виден другим. Особенно тем, кто пытается дотянуться.",
+  },
+  {
+    icon: Trophy,
+    title: "Поднимайтесь выше",
+    description: "Если способность двигаться вперёд — не просто слово, а реальность.",
+  },
+];
+
+const HowItWorksSection = () => {
+  return (
+    <section className="py-24 relative">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/10 to-background" />
+      
+      <div className="container px-4 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-4">
+            КАК ЭТО РАБОТАЕТ
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            
+          </p>
+        </motion.div>
+        
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="relative group"
+            >
+              {/* Connection line */}
+              {index < steps.length - 1 && (
+                <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-border to-transparent z-0" />
+              )}
+              
+              <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-white transition-all duration-500 relative z-10">
+                {/* Step number */}
+                <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-foreground flex items-center justify-center font-display text-xl text-background box-glow-white">
+                  {index + 1}
+                </div>
+                
+                {/* Icon */}
+                <div className="w-16 h-16 rounded-2xl bg-foreground/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <step.icon className="w-8 h-8 text-foreground" />
+                </div>
+                
+                <h3 className="text-2xl font-display mb-4 text-foreground">
+                  {step.title}
+                </h3>
+                
+                <p className="text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorksSection;
