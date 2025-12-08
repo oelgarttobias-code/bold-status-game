@@ -4,6 +4,14 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
+  "github": {
+    "silent": true
+  },
+  "build": {
+    "env": {
+      "ENABLE_BUILD_CACHE": "false"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
