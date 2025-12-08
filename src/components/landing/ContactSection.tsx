@@ -16,7 +16,7 @@ const ContactSection = () => {
             <span className="gradient-text-white text-glow-white">КОНТАКТЫ</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Есть вопросы? Напиши нам
+            Есть вопросы? Хотя, зачем они тебе, если ты уже в BOLD?
           </p>
         </motion.div>
         

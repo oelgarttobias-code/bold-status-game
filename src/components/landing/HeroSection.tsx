@@ -39,11 +39,11 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-display tracking-wide">
-            СТАТУС-КЛИКЕР В TELEGRAM
+            ТЕЛЕГРАМ-ИГРА ДЛЯ ТЕХ, КТО СЧИТАЕТ СЕБЯ КРУТЫМ
           </p>
           
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Соревнуйся с другими игроками. Поднимайся в рейтинге. Докажи, что ты играешь по-крупному.
+            Покажи другим, что ты не из тех, кто просто так бродит по жизни. Поднимайся в рейтинге — если сможешь.
           </p>
           
           <motion.div
@@ -54,7 +54,7 @@ const HeroSection = () => {
             <a href="https://t.me/be_BOLD_bot" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
-                ИГРАТЬ
+                ПОПРОБУЙ
               </Button>
             </a>
           </motion.div>

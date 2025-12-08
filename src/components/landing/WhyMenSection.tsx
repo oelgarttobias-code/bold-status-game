@@ -5,17 +5,17 @@ const cards = [
   {
     icon: Medal,
     title: "Борьба за первое место",
-    description: "Рейтинг обновляется в реальном времени. Каждый клик приближает к вершине.",
+    description: "Рейтинг обновляется в реальном времени. Но вершина для многих остаётся недосягаемой мечтой.",
   },
   {
     icon: Flame,
     title: "Азарт соревнования",
-    description: "Видишь, кто выше тебя. Хочешь обогнать. Это и есть игра.",
+    description: "Видишь, кто выше тебя. Мечтаешь обогнать. Но мечты не всегда становятся реальностью.",
   },
   {
     icon: Gamepad2,
     title: "Простой геймплей",
-    description: "Никаких сложных правил. Покупай клики, расти в рейтинге, побеждай.",
+    description: "Правила просты: или ты вверх, или вниз. Покупай клики, если хватит кошелька.",
   },
 ];
 
@@ -33,11 +33,11 @@ const WhyMenSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6">
-            ПОЧЕМУ <span className="gradient-text-white text-glow-white">BOLD</span>
+            ПОЧЕМУ <span className="gradient-text-white text-glow-white">ТЫ В BOLD</span>
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Потому что иногда хочется просто соревноваться. Без сложностей. Без лишних слов.
+            Потому что тебе нужна игра, где можно доказать своё превосходство. Или хотя бы попытаться.
           </p>
         </motion.div>
         

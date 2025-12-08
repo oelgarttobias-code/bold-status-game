@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Zap, Smartphone, BarChart3, Users } from "lucide-react";
 
 const features = [
-  { icon: Zap, text: "Мгновенный старт" },
-  { icon: Smartphone, text: "Прямо в Telegram" },
-  { icon: BarChart3, text: "Живой рейтинг" },
-  { icon: Users, text: "Тысячи игроков" },
+  { icon: Zap, text: "Мгновенный старт для дерзких" },
+  { icon: Smartphone, text: "Прямо в Telegram для смелых" },
+  { icon: BarChart3, text: "Живой рейтинг для достойных" },
+  { icon: Users, text: "Тысячи игроков, но место только для лучших" }
 ];
 
 const AtmosphereSection = () => {
@@ -25,12 +25,12 @@ const AtmosphereSection = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6">
-              ИГРА ПРО <span className="gradient-text-white text-glow-white">СТАТУС</span>
+              ИГРА ПРО <span className="gradient-text-white text-glow-white">ПРЕВОСХОДСТВО</span>
             </h2>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Это не про деньги. Это про азарт соревнования и желание быть лучше.
-              Простая механика. Реальный адреналин.
+              Это не про деньги. Это про то, кто ты на самом деле.
+              Простая механика. Реальный адреналин для тех, кто может его выдержать.
             </p>
           </motion.div>
           

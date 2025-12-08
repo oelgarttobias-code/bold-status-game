@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Zap, Trophy, Target } from "lucide-react";
 
 const features = [
-  { icon: Zap, text: "Быстрый геймплей" },
-  { icon: Trophy, text: "Живой рейтинг" },
-  { icon: Target, text: "Азартные механики" },
+  { icon: Zap, text: "Быстрый геймплей для быстрых" },
+  { icon: Trophy, text: "Рейтинг для достойных" },
+  { icon: Target, text: "Механики для азартных" }
 ];
 
 const AboutBoldieSection = () => {
@@ -28,12 +28,12 @@ const AboutBoldieSection = () => {
           
           <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
             <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-              BOLD — это кликер, где твой статус растёт с каждым действием.
-              Здесь нет случайностей — только твои решения определяют место в рейтинге.
+              BOLD — это кликер, где мы решаем, достоин ли ты быть в топе.
+              Не надейся, что здесь всё будет по-твоему — здесь всё по нашим правилам.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Покупай клики, соревнуйся с другими игроками, поднимайся выше.
-              Простые правила. Азартный геймплей.
+              Покупай клики, если хватит денег. Соревнуйся, если осмелишься. Поднимайся выше — если сможешь.
+              Простые правила для простых людей. Азартный геймплей для тех, кто может.
             </p>
           </div>
           
