@@ -30,19 +30,24 @@ const CTASection = () => {
             </motion.div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6">
-              ГОТОВ <span className="gradient-text-white text-glow-white">ДОКАЗАТЬ</span>?
+              ТОП — НЕ ЦЕЛЬ
             </h2>
             
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              Если думаешь, что достоин — запусти игру. Но помни, в топе места мало.
+              ТОП — ОТРАЖЕНИЕ
             </p>
             
             <a href="https://t.me/be_BOLD_bot" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
-                ПОПЫТАТЬ УДАЧУ
+                ПРОВЕРИТЬ СВОЙ УРОВЕНЬ
               </Button>
             </a>
+            <div className="mt-8 text-muted-foreground">
+              <p>Большинство видит его лишь издалека.</p>
+              <p>Некоторые — достигают.</p>
+              <p>Единицы — удерживают.</p>
+            </div>
           </div>
         </motion.div>
       </div>

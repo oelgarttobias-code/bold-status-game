@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Zap, Trophy, Target } from "lucide-react";
 
 const features = [
-  { icon: Zap, text: "Быстрый геймплей для быстрых" },
-  { icon: Trophy, text: "Рейтинг для достойных" },
-  { icon: Target, text: "Механики для азартных" }
+  { icon: Zap, text: "Повышайте свой статус — если располагаете ресурсами" },
+  { icon: Trophy, text: "Укрепляйте позицию — если готовы подтверждать её регулярно" },
+  { icon: Target, text: "Наблюдайте за теми, кто ниже — это неизбежная часть роста" }
 ];
 
 const AboutBoldieSection = () => {
@@ -22,18 +22,16 @@ const AboutBoldieSection = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-8">
-            ЭТО <span className="gradient-text-white text-glow-white">ИГРА</span>. И В НЕЙ ТЫ —{" "}
-            <span className="text-foreground">ГЛАВНЫЙ</span>
+            МЫ НЕ СОЗДАЕМ ПРАВИЛА. МЫ ЛИШЬ ПОКАЗЫВАЕМ ВАШЕ МЕСТО В НИХ.
           </h2>
           
           <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
             <p className="text-lg md:text-xl text-foreground/90 leading-relaxed mb-6">
-              BOLD — это кликер, где мы решаем, достоин ли ты быть в топе.
-              Не надейся, что здесь всё будет по-твоему — здесь всё по нашим правилам.
+              ЭТО ИЕРАРХИЯ, ГДЕ ВАША ПОЗИЦИЯ СТОИТ ДЕНЕГ
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Покупай клики, если хватит денег. Соревнуйся, если осмелишься. Поднимайся выше — если сможешь.
-              Простые правила для простых людей. Азартный геймплей для тех, кто может.
+              BOLD — инструмент, который фиксирует ваше место среди других.
+              Никаких амбиций «победить систему» — система существует, чтобы показать, *кто может позволить себе движение вверх*.
             </p>
           </div>
           

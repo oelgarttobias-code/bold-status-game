@@ -30,7 +30,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} BOLD. Not for everyone.
+            © {new Date().getFullYear()} BOLD. Доступ ограничен. Статус — нет.
           </p>
         </div>
       </div>

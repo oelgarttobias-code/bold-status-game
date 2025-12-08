@@ -4,18 +4,18 @@ import { MousePointerClick, Trophy, TrendingUp } from "lucide-react";
 const steps = [
   {
     icon: MousePointerClick,
-    title: "Покупай клики",
-    description: "Каждый клик — это шаг к вершине. Если, конечно, у тебя есть на что нажать.",
+    title: "Повышайте свой уровень",
+    description: "Каждое действие — шаг вверх. Он стоит денег, как и любое движение в жизни.",
   },
   {
     icon: TrendingUp,
-    title: "Расти в статусе",
-    description: "Твой прогресс виден всем. Особенно тем, кто ниже тебя в рейтинге.",
+    title: "Закрепляйте позицию",
+    description: "Ваш статус виден другим. Особенно тем, кто пытается дотянуться.",
   },
   {
     icon: Trophy,
-    title: "Стань лучшим",
-    description: "Возглавь рейтинг, если тебе этого хватит. Но сначала докажи, что ты не просто болтун.",
+    title: "Поднимайтесь выше",
+    description: "Если способность двигаться вперёд — не просто слово, а реальность.",
   },
 ];
 
@@ -34,10 +34,10 @@ const HowItWorksSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-4">
-            КАК <span className="gradient-text-white text-glow-white">ИГРАТЬ</span>
+            КАК ЭТО РАБОТАЕТ
           </h2>
           <p className="text-muted-foreground text-lg">
-            Три шага к вершине, если ты действительно достоин
+            
           </p>
         </motion.div>
         
