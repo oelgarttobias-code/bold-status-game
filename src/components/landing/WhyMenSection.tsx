@@ -1,28 +1,28 @@
 import { motion } from "framer-motion";
-import { Medal, Heart, Gamepad2 } from "lucide-react";
+import { Medal, Flame, Gamepad2 } from "lucide-react";
 
 const cards = [
   {
     icon: Medal,
-    title: "Соревнование за первое место",
-    description: "Поднимайся в рейтинге и стань лучшим игроком",
+    title: "Борьба за первое место",
+    description: "Рейтинг обновляется в реальном времени. Каждый клик приближает к вершине.",
   },
   {
-    icon: Heart,
-    title: "Флиртующие реакции Boldie",
-    description: "Уникальные реплики за твои достижения в игре",
+    icon: Flame,
+    title: "Азарт соревнования",
+    description: "Видишь, кто выше тебя. Хочешь обогнать. Это и есть игра.",
   },
   {
     icon: Gamepad2,
-    title: "Игровая модель статуса",
-    description: "Простая механика, азартный геймплей",
+    title: "Простой геймплей",
+    description: "Никаких сложных правил. Покупай клики, расти в рейтинге, побеждай.",
   },
 ];
 
 const WhyMenSection = () => {
   return (
     <section className="py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/5 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/5 to-background" />
       
       <div className="container px-4 relative z-10">
         <motion.div
@@ -33,13 +33,11 @@ const WhyMenSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6">
-            Boldie любит тех, кто играет{" "}
-            <span className="gradient-text-gold text-glow-gold">уверенно</span>
+            ПОЧЕМУ <span className="gradient-text-white text-glow-white">BOLD</span>
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Мужчины выбирают Bold, потому что это азарт, игра и лёгкая провокация.
-            Это возможность показать характер — не в жизни, а в игровом формате.
+            Потому что иногда хочется просто соревноваться. Без сложностей. Без лишних слов.
           </p>
         </motion.div>
         
@@ -53,9 +51,9 @@ const WhyMenSection = () => {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="group"
             >
-              <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-pink transition-all duration-500 text-center">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-secondary/30 to-primary/30 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <card.icon className="w-10 h-10 text-secondary" />
+              <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-white transition-all duration-500 text-center">
+                <div className="w-20 h-20 rounded-2xl bg-foreground/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <card.icon className="w-10 h-10 text-foreground" />
                 </div>
                 
                 <h3 className="text-2xl font-display mb-4 text-foreground">

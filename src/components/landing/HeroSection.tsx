@@ -1,96 +1,64 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Send } from "lucide-react";
-import boldieHero from "@/assets/boldie-hero.jpg";
+import { Gamepad2 } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
       <div 
-        className="absolute inset-0 bg-gradient-to-b from-purple/20 via-background to-background"
+        className="absolute inset-0"
         style={{ backgroundImage: 'var(--gradient-hero)' }}
       />
       
       {/* Animated glow orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-foreground/5 rounded-full blur-[120px] animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-foreground/5 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
       
       <div className="container relative z-10 px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center max-w-4xl mx-auto"
+        >
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-center lg:text-left"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="inline-block mb-6"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block mb-4"
-            >
-              <span className="px-4 py-2 rounded-full glass-card text-sm text-primary font-medium">
-                🎮 Telegram Game
-              </span>
-            </motion.div>
-            
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display mb-6 leading-tight">
-              Готов доказать{" "}
-              <span className="gradient-text-gold text-glow-gold">Boldie</span>
-              , что ты играешь{" "}
-              <span className="gradient-text-pink text-glow-pink">по-крупному</span>?
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Bold — игровой статус-кликер в Telegram. Соревнуйся, поднимайся в рейтинге, удивляй Boldie.
-            </p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <Button variant="hero" size="xl" className="group">
-                <Send className="mr-2 group-hover:translate-x-1 transition-transform" />
-                Запустить в Telegram
-              </Button>
-            </motion.div>
+            <span className="px-4 py-2 rounded-full glass-card text-sm text-foreground font-medium flex items-center gap-2">
+              <Gamepad2 className="w-4 h-4" />
+              Telegram Game
+            </span>
           </motion.div>
           
-          {/* Boldie Image */}
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-display mb-6 leading-tight">
+            <span className="gradient-text-white text-glow-white">BOLD</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-display tracking-wide">
+            СТАТУС-КЛИКЕР В TELEGRAM
+          </p>
+          
+          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+            Соревнуйся с другими игроками. Поднимайся в рейтинге. Докажи, что ты играешь по-крупному.
+          </p>
+          
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
           >
-            <div className="relative mx-auto max-w-md lg:max-w-lg">
-              {/* Glow behind image */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-secondary/40 rounded-3xl blur-3xl transform scale-95" />
-              
-              <img
-                src={boldieHero}
-                alt="Boldie - цифровая дива игры Bold"
-                className="relative w-full rounded-3xl shadow-2xl neon-border-gold animate-float"
-              />
-              
-              {/* Floating quote */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 0.5 }}
-                className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-12 glass-card px-6 py-4 rounded-2xl max-w-xs"
-              >
-                <p className="text-primary italic font-medium">
-                  "Ну давай, удиви меня"
-                </p>
-                <p className="text-muted-foreground text-sm mt-1">— Boldie</p>
-              </motion.div>
-            </div>
+            <a href="https://t.me/be_BOLD_bot" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl" className="group">
+                <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
+                ИГРАТЬ
+              </Button>
+            </a>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
       
       {/* Scroll indicator */}
@@ -104,7 +72,7 @@ const HeroSection = () => {
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-primary rounded-full"
+            className="w-1.5 h-1.5 bg-foreground rounded-full"
           />
         </div>
       </motion.div>
