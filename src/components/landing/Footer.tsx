@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <span className="text-3xl font-display gradient-text-gold text-glow-gold">
+            <span className="text-3xl font-display gradient-text-white text-glow-white">
               BOLD
             </span>
           </div>
@@ -16,13 +16,13 @@ const Footer = () => {
           <div className="flex gap-8">
             <Link
               to="/privacy"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               to="/terms"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms of Use
             </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Bold. All rights reserved.
+            © {new Date().getFullYear()} BOLD. All rights reserved.
           </p>
         </div>
       </div>

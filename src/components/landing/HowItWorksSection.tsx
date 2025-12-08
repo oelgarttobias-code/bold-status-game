@@ -1,27 +1,21 @@
 import { motion } from "framer-motion";
-import { MousePointerClick, Trophy, Eye } from "lucide-react";
+import { MousePointerClick, Trophy, TrendingUp } from "lucide-react";
 
 const steps = [
   {
     icon: MousePointerClick,
-    title: "Клики — это сила",
-    description: "Покупая игровые клики, ты поднимаешь свой статус. Никаких оценок реального богатства. Только игровой прогресс.",
-    iconBg: "bg-primary/20",
-    iconColor: "text-primary",
+    title: "Покупай клики",
+    description: "Каждый клик увеличивает твой игровой счёт. Больше кликов — выше позиция в рейтинге.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Расти в статусе",
+    description: "Твой прогресс виден всем. Соревнуйся с другими игроками за первые места.",
   },
   {
     icon: Trophy,
-    title: "Рейтинг — твоя арена",
-    description: "Поднимайся выше других игроков и доказывай, что ты умеешь играть в стиль.",
-    iconBg: "bg-secondary/20",
-    iconColor: "text-secondary",
-  },
-  {
-    icon: Eye,
-    title: "Boldie следит за успехами",
-    description: "Чем выше твои результаты, тем интереснее реплики Boldie. Это часть игрового опыта.",
-    iconBg: "bg-accent/20",
-    iconColor: "text-accent",
+    title: "Стань лучшим",
+    description: "Возглавь рейтинг и докажи, что ты играешь по-крупному.",
   },
 ];
 
@@ -29,7 +23,7 @@ const HowItWorksSection = () => {
   return (
     <section className="py-24 relative">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/10 to-background" />
       
       <div className="container px-4 relative z-10">
         <motion.div
@@ -40,11 +34,11 @@ const HowItWorksSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-4">
-            Кликер статуса.{" "}
-            <span className="gradient-text-gold text-glow-gold">Всё просто</span>{" "}
-            — и очень{" "}
-            <span className="gradient-text-pink text-glow-pink">азартно</span>
+            КАК <span className="gradient-text-white text-glow-white">ИГРАТЬ</span>
           </h2>
+          <p className="text-muted-foreground text-lg">
+            Три шага до вершины рейтинга
+          </p>
         </motion.div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -62,15 +56,15 @@ const HowItWorksSection = () => {
                 <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-border to-transparent z-0" />
               )}
               
-              <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-gold transition-all duration-500 relative z-10">
+              <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-white transition-all duration-500 relative z-10">
                 {/* Step number */}
-                <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-primary flex items-center justify-center font-display text-xl text-primary-foreground box-glow-gold">
+                <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-foreground flex items-center justify-center font-display text-xl text-background box-glow-white">
                   {index + 1}
                 </div>
                 
                 {/* Icon */}
-                <div className={`w-16 h-16 rounded-2xl ${step.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <step.icon className={`w-8 h-8 ${step.iconColor}`} />
+                <div className="w-16 h-16 rounded-2xl bg-foreground/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <step.icon className="w-8 h-8 text-foreground" />
                 </div>
                 
                 <h3 className="text-2xl font-display mb-4 text-foreground">
