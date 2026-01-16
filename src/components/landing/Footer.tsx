@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-12 border-t border-border/30">
       <div className="container px-4">
@@ -18,19 +21,19 @@ const Footer = () => {
               to="/privacy"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Privacy Policy
+              {t.footer.privacy}
             </Link>
             <Link
               to="/terms"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Terms of Use
+              {t.footer.terms}
             </Link>
           </div>
           
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} BOLD. Доступ ограничен. Статус — нет.
+            © {new Date().getFullYear()} BOLD. {t.footer.copyright}
           </p>
         </div>
       </div>

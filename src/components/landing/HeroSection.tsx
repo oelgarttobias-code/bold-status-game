@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Gamepad2 } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
@@ -30,21 +33,20 @@ const HeroSection = () => {
           >
             <span className="px-4 py-2 rounded-full glass-card text-sm text-foreground font-medium flex items-center gap-2">
               <Gamepad2 className="w-4 h-4" />
-              Telegram Game
+              {t.hero.badge}
             </span>
           </motion.div>
           
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-display mb-6 leading-tight">
-            <span className="gradient-text-white text-glow-white">BOLD</span>
+            <span className="gradient-text-white text-glow-white">{t.hero.title}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-display tracking-wide">
-            СТАТУСНАЯ СИСТЕМА ДЛЯ ТЕХ, КТО ГОТОВ ПОДТВЕРЖДАТЬ СВОЙ УРОВЕНЬ
+            {t.hero.subtitle}
           </p>
           
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Если вы здесь, значит стремитесь подняться выше привычного окружения.
-                        Мы не оцениваем желания — мы оцениваем возможности.
+            {t.hero.description}
           </p>
           
           <motion.div
@@ -55,7 +57,7 @@ const HeroSection = () => {
             <a href="https://t.me/be_BOLD_bot" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
-                ВОЙТИ
+                {t.hero.cta}
               </Button>
             </a>
           </motion.div>

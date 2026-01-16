@@ -5,31 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const faqs = [
-  {
-    question: "Что такое BOLD",
-    answer: "BOLD — это инструмент, который фиксирует ваше место среди других.",
-  },
-  {
-    question: "Как работает система статуса",
-    answer: "Каждое действие — шаг вверх. Он стоит денег, как и любое движение в жизни.",
-  },
-  {
-    question: "Есть ли рейтинг",
-    answer: "Да, прозрачный рейтинг — для тех, кому нечего скрывать.",
-  },
-  {
-    question: "Это бесплатно",
-    answer: "Мгновенное вступление — для тех, кому есть что подтверждать.",
-  },
-  {
-    question: "Зачем вам задавать этот вопрос?",
-    answer: "Вероятно, потому что вам недостаточно быть на одном уровне с остальными. Но стремление — не показатель."
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const FAQSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24 relative">
       <div className="container px-4 relative z-10">
@@ -41,7 +21,7 @@ const FAQSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-4">
-            <span className="gradient-text-white text-glow-white">ВОПРОСЫ</span>
+            <span className="gradient-text-white text-glow-white">{t.faq.title}</span>
           </h2>
         </motion.div>
         
@@ -53,7 +33,7 @@ const FAQSection = () => {
           className="max-w-3xl mx-auto"
         >
           <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
+            {t.faq.items.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}

@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Gamepad2 } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const CTASection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background effects */}
@@ -30,23 +33,23 @@ const CTASection = () => {
             </motion.div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display mb-6">
-              ТОП — НЕ ЦЕЛЬ
+              {t.cta.title}
             </h2>
             
             <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-              ТОП — ОТРАЖЕНИЕ
+              {t.cta.subtitle}
             </p>
             
             <a href="https://t.me/be_BOLD_bot" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
-                ПРОВЕРИТЬ СВОЙ УРОВЕНЬ
+                {t.cta.button}
               </Button>
             </a>
             <div className="mt-8 text-muted-foreground">
-              <p>Большинство видит его лишь издалека.</p>
-              <p>Некоторые — достигают.</p>
-              <p>Единицы — удерживают.</p>
+              {t.cta.lines.map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
             </div>
           </div>
         </motion.div>
