@@ -7,10 +7,12 @@ import CTASection from "@/components/landing/CTASection";
 import FAQSection from "@/components/landing/FAQSection";
 import ContactSection from "@/components/landing/ContactSection";
 import Footer from "@/components/landing/Footer";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
+      <LanguageSwitcher />
       <HeroSection />
       <AboutBoldieSection />
       <HowItWorksSection />

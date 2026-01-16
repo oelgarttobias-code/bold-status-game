@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24 relative">
       <div className="container px-4 relative z-10">
@@ -13,10 +16,10 @@ const ContactSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-display mb-4">
-            <span className="gradient-text-white text-glow-white">КОНТАКТЫ</span>
+            <span className="gradient-text-white text-glow-white">{t.contact.title}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Если необходимость обратиться к нам — ваш текущий уровень это подразумевает
+            {t.contact.description}
           </p>
         </motion.div>
         
