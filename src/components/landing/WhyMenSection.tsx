@@ -40,8 +40,8 @@ const WhyMenSection = () => {
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 className="group"
               >
-                <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-white transition-all duration-500 text-center">
-                  <div className="w-20 h-20 rounded-2xl bg-foreground/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="glass-card rounded-3xl p-8 h-full text-center">
+                  <div className="w-20 h-20 rounded-2xl bg-foreground/10 flex items-center justify-center mx-auto mb-6">
                     <Icon className="w-10 h-10 text-foreground" />
                   </div>
                   
