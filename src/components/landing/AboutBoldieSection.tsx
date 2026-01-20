@@ -44,9 +44,9 @@ const AboutBoldieSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="glass-card rounded-2xl p-6 hover:neon-border-white transition-all duration-500 group"
+                  className="glass-card rounded-2xl p-6"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-foreground/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-foreground/20 transition-colors">
+                  <div className="w-14 h-14 rounded-xl bg-foreground/10 flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-7 h-7 text-foreground" />
                   </div>
                   <p className="text-foreground font-medium text-lg">

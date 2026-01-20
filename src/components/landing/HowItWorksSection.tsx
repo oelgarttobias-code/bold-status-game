@@ -42,14 +42,14 @@ const HowItWorksSection = () => {
                   <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-border to-transparent z-0" />
                 )}
                 
-                <div className="glass-card rounded-3xl p-8 h-full hover:neon-border-white transition-all duration-500 relative z-10">
+                <div className="glass-card rounded-3xl p-8 h-full relative z-10">
                   {/* Step number */}
                   <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-foreground flex items-center justify-center font-display text-xl text-background box-glow-white">
                     {index + 1}
                   </div>
                   
                   {/* Icon */}
-                  <div className="w-16 h-16 rounded-2xl bg-foreground/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 rounded-2xl bg-foreground/10 flex items-center justify-center mb-6">
                     <Icon className="w-8 h-8 text-foreground" />
                   </div>
                   

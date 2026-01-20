@@ -42,9 +42,9 @@ const AtmosphereSection = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="glass-card rounded-2xl p-6 text-center hover:neon-border-white transition-all duration-500 group"
+                  className="glass-card rounded-2xl p-6 text-center"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-foreground/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-foreground/20 transition-colors">
+                  <div className="w-14 h-14 rounded-xl bg-foreground/10 flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-7 h-7 text-foreground" />
                   </div>
                   <p className="text-sm md:text-base font-medium text-foreground">
