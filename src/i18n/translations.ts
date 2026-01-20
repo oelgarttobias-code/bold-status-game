@@ -122,6 +122,82 @@ export const translations = {
       en: "EN",
       ru: "RU",
     },
+    // Common
+    common: {
+      back: "Back",
+    },
+    // Privacy Policy
+    privacy: {
+      title: "Privacy Policy",
+      sections: [
+        {
+          title: "1. General Provisions",
+          content: "Bold (\"we\", \"us\" or \"our\") respects your privacy. This Privacy Policy explains how we collect, use and protect your information when using our Telegram application Bold.",
+        },
+        {
+          title: "2. Information Collected",
+          content: "We may collect the following information:",
+          list: [
+            "Telegram user ID",
+            "Telegram username",
+            "Game statistics and progress",
+            "In-game transaction data",
+          ],
+        },
+        {
+          title: "3. Use of Information",
+          content: "The collected information is used to ensure the game operates, maintain rankings, process in-game transactions and improve user experience.",
+        },
+        {
+          title: "4. Data Protection",
+          content: "We apply modern security measures to protect your information from unauthorized access, alteration or destruction.",
+        },
+        {
+          title: "5. Contact",
+          content: "For privacy inquiries, contact: support@bold.game",
+        },
+      ],
+    },
+    // Terms of Use
+    terms: {
+      title: "Terms of Use",
+      sections: [
+        {
+          title: "1. Acceptance of Terms",
+          content: "By using the Bold application, you agree to these Terms of Use. If you do not agree with any terms, please do not use the application.",
+        },
+        {
+          title: "2. Service Description",
+          content: "Bold is a clicker game application that operates through Telegram. The application provides entertainment content and game mechanics for competition between users.",
+        },
+        {
+          title: "3. Game Currency and Purchases",
+          content: "All in-game purchases are voluntary. Game clicks and status are virtual game elements and have no real monetary value outside the game.",
+        },
+        {
+          title: "4. Code of Conduct",
+          content: "Users agree to:",
+          list: [
+            "Not use cheats or exploits",
+            "Not disrupt the service",
+            "Follow Telegram rules",
+            "Respect other users",
+          ],
+        },
+        {
+          title: "5. Limitation of Liability",
+          content: "Bold is provided \"as is\". We do not guarantee uninterrupted operation of the service and are not responsible for any losses associated with using the application.",
+        },
+        {
+          title: "6. Changes to Terms",
+          content: "We reserve the right to modify these terms. Continued use of the application after changes means your acceptance of the new terms.",
+        },
+        {
+          title: "7. Contact",
+          content: "For inquiries, contact: support@bold.game",
+        },
+      ],
+    },
   },
   ru: {
     // Hero
@@ -243,6 +319,82 @@ export const translations = {
     language: {
       en: "EN",
       ru: "RU",
+    },
+    // Common
+    common: {
+      back: "Назад",
+    },
+    // Privacy Policy
+    privacy: {
+      title: "Политика конфиденциальности",
+      sections: [
+        {
+          title: "1. Общие положения",
+          content: "Bold («мы», «нас» или «наш») уважает вашу конфиденциальность. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию при использовании нашего Telegram-приложения Bold.",
+        },
+        {
+          title: "2. Собираемая информация",
+          content: "Мы можем собирать следующую информацию:",
+          list: [
+            "Telegram ID пользователя",
+            "Имя пользователя в Telegram",
+            "Игровая статистика и прогресс",
+            "Данные о транзакциях в игре",
+          ],
+        },
+        {
+          title: "3. Использование информации",
+          content: "Собранная информация используется для обеспечения работы игры, ведения рейтингов, обработки игровых транзакций и улучшения пользовательского опыта.",
+        },
+        {
+          title: "4. Защита данных",
+          content: "Мы применяем современные меры безопасности для защиты вашей информации от несанкционированного доступа, изменения или уничтожения.",
+        },
+        {
+          title: "5. Контакты",
+          content: "По вопросам конфиденциальности обращайтесь: support@bold.game",
+        },
+      ],
+    },
+    // Terms of Use
+    terms: {
+      title: "Условия использования",
+      sections: [
+        {
+          title: "1. Принятие условий",
+          content: "Используя приложение Bold, вы соглашаетесь с настоящими Условиями использования. Если вы не согласны с какими-либо условиями, пожалуйста, не используйте приложение.",
+        },
+        {
+          title: "2. Описание сервиса",
+          content: "Bold — это игровое приложение в формате кликера, работающее через Telegram. Приложение предоставляет развлекательный контент и игровую механику для соревнования между пользователями.",
+        },
+        {
+          title: "3. Игровая валюта и покупки",
+          content: "Все покупки в игре являются добровольными. Игровые клики и статус являются виртуальными игровыми элементами и не имеют реальной денежной стоимости вне игры.",
+        },
+        {
+          title: "4. Правила поведения",
+          content: "Пользователи обязуются:",
+          list: [
+            "Не использовать читы и эксплойты",
+            "Не нарушать работу сервиса",
+            "Соблюдать правила Telegram",
+            "Уважать других пользователей",
+          ],
+        },
+        {
+          title: "5. Ограничение ответственности",
+          content: "Bold предоставляется «как есть». Мы не гарантируем бесперебойную работу сервиса и не несём ответственности за любые убытки, связанные с использованием приложения.",
+        },
+        {
+          title: "6. Изменение условий",
+          content: "Мы оставляем за собой право изменять настоящие условия. Продолжение использования приложения после изменений означает ваше согласие с новыми условиями.",
+        },
+        {
+          title: "7. Контакты",
+          content: "По вопросам обращайтесь: support@bold.game",
+        },
+      ],
     },
   },
 } as const;
