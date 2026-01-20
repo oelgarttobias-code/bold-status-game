@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Language, translations } from './translations';
 
-type TranslationType = typeof translations.en;
+type TranslationType = (typeof translations)['en'];
 
 interface LanguageContextType {
   language: Language;
@@ -21,7 +21,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('bold-language', language);
   }, [language]);
 
-  const t = translations[language];
+  const t = translations[language] as TranslationType;
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
