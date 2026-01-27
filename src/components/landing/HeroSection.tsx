@@ -54,7 +54,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <a href="https://t.me/be_BOLD_bot" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/tapthebold" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
                 {t.hero.cta}
