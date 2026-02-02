@@ -40,7 +40,7 @@ const CTASection = () => {
               {t.cta.subtitle}
             </p>
             
-            <a href="https://bit.ly/4tv3Bbx" target="_blank" rel="noopener noreferrer">
+            <a href={t.cta.buttonLink} target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
                 {t.cta.button}
