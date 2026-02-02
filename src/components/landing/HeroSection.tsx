@@ -54,7 +54,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <a href="https://bit.ly/4tv3Bbx" target="_blank" rel="noopener noreferrer">
+            <a href={t.hero.ctaLink} target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group">
                 <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
                 {t.hero.cta}
