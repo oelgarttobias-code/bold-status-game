@@ -54,12 +54,21 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <a href={t.hero.ctaLink} target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="xl" className="group">
-                <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
-                {t.hero.cta}
-              </Button>
-            </a>
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                  (window as any).gtag_report_conversion(t.hero.ctaLink);
+                } else {
+                  window.open(t.hero.ctaLink, '_blank');
+                }
+              }}
+            >
+              <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
+              {t.hero.cta}
+            </Button>
           </motion.div>
         </motion.div>
       </div>

@@ -40,12 +40,21 @@ const CTASection = () => {
               {t.cta.subtitle}
             </p>
             
-            <a href={t.cta.buttonLink} target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="xl" className="group">
-                <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
-                {t.cta.button}
-              </Button>
-            </a>
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                  (window as any).gtag_report_conversion(t.cta.buttonLink);
+                } else {
+                  window.open(t.cta.buttonLink, '_blank');
+                }
+              }}
+            >
+              <Gamepad2 className="mr-2 group-hover:scale-110 transition-transform" />
+              {t.cta.button}
+            </Button>
             <div className="mt-8 text-muted-foreground">
               {t.cta.lines.map((line, index) => (
                 <p key={index}>{line}</p>
